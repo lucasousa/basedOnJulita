@@ -63,21 +63,21 @@
                 <div class="column is-mobile">
                     <div class="card">
                         <figure class="image">
-                            <img src="static/images/image3-atuacao.jpg" alt="Demonstrações">
+                            <img src="{% static 'images/image3-atuacao.jpg' %}" alt="Demonstrações">
                         </figure>
                     </div>
                 </div>
                 <div class="column is-mobile">
                     <div class="card">
                         <figure class="image">
-                            <img src="static/images/image2-atuacao.jpg" alt="Demonstrações">
+                            <img src="{% static 'images/image2-atuacao.jpg' %}" alt="Demonstrações">
                         </figure>
                     </div>
                 </div>
                 <div class="column is-mobile">
                     <div class="card">
                         <figure class="image">
-                            <img src="static/images/image1-atuacao.jpg" alt="Demonstrações">
+                            <img src="{% static 'images/image1-atuacao.jpg' %}" alt="Demonstrações">
                         </figure>
                     </div>
                 </div>
@@ -86,21 +86,21 @@
                 <div class="column is-mobile">
                     <div class="card">
                         <figure class="image">
-                            <img src="static/images/71_1.jpg" alt="Demonstrações">
+                            <img src="{% static 'images/71_1.jpg' %}" alt="Demonstrações">
                         </figure>
                     </div>
                 </div>
                 <div class="column is-mobile">
                     <div class="card">
                         <figure class="image">
-                            <img src="static/images/002.jpg" alt="Demonstrações">
+                            <img src="{% static 'images/002.jpg' %}" alt="Demonstrações">
                         </figure>
                     </div>
                 </div>
                 <div class="column is-mobile">
                     <div class="card">
                         <figure class="image">
-                            <img src="static/images/001.jpg" alt="Demonstrações">
+                            <img src="{% static 'images/001.jpg' %}" alt="Demonstrações">
                         </figure>
                     </div>
                 </div>
@@ -115,7 +115,7 @@
                 <div class="column is-mobile">
                     <div>
                         <figure class="image image-specialized-centers">
-                            <img src="static/images/educacao_ambiental.png" alt="Demonstrações">
+                            <img src="{% static 'images/educacao_ambiental.png' %}" alt="Demonstrações">
                         </figure>
                     </div>
                     <hr>
@@ -124,7 +124,7 @@
                 <div class="column is-mobile">
                     <div>
                         <figure class="image image-specialized-centers">
-                            <img src="static/images/educacao_em_cultura.png" alt="Demonstrações">
+                            <img src="{% static 'images/educacao_em_cultura.png' %}" alt="Demonstrações">
                         </figure>
                     </div>
                     <hr>
@@ -133,7 +133,7 @@
                 <div class="column is-mobile">
                     <div>
                         <figure class="image image-specialized-centers">
-                            <img src="static/images/educacao_em_saude.png" alt="Demonstrações">
+                            <img src="{% static 'images/educacao_em_saude.png' %}" alt="Demonstrações">
                         </figure>
                     </div>
                     <hr>
@@ -142,7 +142,7 @@
                 <div class="column is-mobile">
                     <div>
                         <figure class="image image-specialized-centers">
-                            <img src="static/images/educao_pelo_esporte.png" alt="Demonstrações">
+                            <img src="{% static 'images/educao_pelo_esporte.png' %}" alt="Demonstrações">
                         </figure>
                     </div>
                     <hr>
@@ -153,71 +153,40 @@
             </div>
         </div>
     </section>
-
+    
+    {% if notices %}
     <section class="section space-section has-background-light">
         <h2 class="has-text-centered">Fique por dentro das novidades da Fundação Julita</h2>
         <div class="container has-text-centered" style="padding: 2rem">
             <div class="columns">
                 <div class="column is-10 is-offset-1">
                     <div class="columns is-multiline">
-                        <div class="column is-4">
-                            <article class="columns is-multiline">
-                                <div class="column is-12">
-                                    <img src="static/images/notice1.png" alt="Featured Image">
-                                </div>
-                                <div class="column is-12">
-                                    <span class="heading notice-date">20/10/2020</span>
-                                    <h1 class="has-text-left notice-title">Slightly Longer Blog Post Title</h1>
-                                    <br>
-                                    <p class="has-text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                        Accusamus ratione harum eaque, animi nulla tempore quis, quam voluptatum.</p>
-                                    <br>
-                                    <span class="has-addons-left">
-                                        <button class="button is-outlined notice-button-view-more">Saiba Mais</button>
-                                    </span>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="column is-4">
-                            <article class="columns is-multiline">
-                                <div class="column is-12">
-                                    <img src="static/images/notice2.png" alt="Featured Image">
-                                </div>
-                                <div class="column is-12">
-                                    <span class="heading notice-date">20/10/2020</span>
-                                    <h1 class="has-text-left notice-title">Slightly Longer Blog Post Title</h1>
-                                    <br>
-                                    <p class="has-text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                        Accusamus ratione harum eaque, animi nulla tempore quis, quam voluptatum.</p>
-                                    <br>
-                                    <span class="has-addons-left">
-                                        <button class="button is-outlined notice-button-view-more">Saiba Mais</button>
-                                    </span>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="column is-4">
-                            <article class="columns is-multiline">
-                                <div class="column is-12">
-                                    <img src="static/images/notice3.png" alt="Featured Image">
-                                </div>
-                                <div class="column is-12">
-                                    <span class="heading notice-date">20/10/2020</span>
-                                    <h1 class="has-text-left notice-title">Slightly Longer Blog Post Title</h1>
-                                    <br>
-                                    <p class="has-text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                        Accusamus ratione harum eaque, animi nulla tempore quis, quam voluptatum.</p>
-                                    <br>
-                                    <span class="has-addons-left">
-                                        <button class="button is-outlined notice-button-view-more">Saiba Mais</button>
-                                    </span>
-                                </div>
-                            </article>
-                        </div>
                         
+                        {% for notice in  notices %}
+                        <div class="column is-4">
+                            <article class="columns is-multiline">
+                                <div class="column is-12">
+                                    <img src="{{notice.cover_image.url}}" alt="Featured Image">
+                                </div>
+                                <div class="column is-12">
+                                    <span class="heading notice-date">{{notice.published_date}}</span>
+                                    <h1 class="has-text-left notice-title">{{notice.title}}</h1>
+                                    <br>
+                                    <p class="has-text-left">
+                                        {{notice.text}}
+                                    </p>
+                                    <br>
+                                    <span class="has-addons-left">
+                                        <button class="button is-outlined notice-button-view-more">Saiba Mais</button>
+                                    </span>
+                                </div>
+                            </article>
+                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    {% endif %}
 {% endblock %}
