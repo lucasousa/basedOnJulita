@@ -17,7 +17,7 @@ class Notice(models.Model):
     class Meta:
         verbose_name = 'Notícia'
         verbose_name_plural = 'Notícias'
-        ordering = ['published_date']
+        ordering = ['-published_date']
 
 
     def __str__(self):
