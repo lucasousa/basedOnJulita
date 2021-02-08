@@ -173,7 +173,7 @@
                                     <h1 class="has-text-left notice-title">{{notice.title}}</h1>
                                     <br>
                                     <p class="has-text-left">
-                                        {{notice.text}}
+                                        {{ notice.text|striptags|safe|slice:":60" }}...
                                     </p>
                                     <br>
                                     <span class="has-addons-left">
