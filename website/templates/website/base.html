@@ -1,0 +1,165 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Transformando o Futuro | ONG - Julita</title>
+    <link rel="stylesheet" href="{% static 'css/bulma/bulma.css' %}">
+    <link rel="stylesheet" href="{% static 'fontawesome/css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/pages/main.css' %}">
+</head>
+
+<body>
+    <header class="hero is-medium is-bold">
+        <div class="hero-head">
+            <nav class="navbar menu" role="navigation" aria-label="main navigation">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="../">
+                            <figure class="logo-menu">
+                                <img src="{% static 'images/logo-julita.png' %}" alt="Logo">
+                            </figure>
+                        </a>
+                        <button class="navbar-burger burger" data-target="navMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    <div class="navbar-menu navbar-end" id="navMenu">
+                        <a href="#" class="navbar-item">
+                            <span>
+                                Sobre nós
+                            </span>
+                        </a>
+                        <a href="#" class="navbar-item">
+                            <span>
+                                Programas
+                            </span>
+                        </a>
+                        <a href="#" class="navbar-item">
+                            <span>
+                                Centros Especializados
+                            </span>
+                        </a>
+                        <a href="#" class="navbar-item">
+                            <span>
+                                Apoie
+                            </span>
+                        </a>
+                        <a href="#" class="navbar-item">
+                            <span>
+                                Referências
+                            </span>
+                        </a>
+                        <a href="#" class="navbar-item">
+                            <span>
+                                Notícias e Artigos
+                            </span>
+                        </a>
+                        <a href="#" class="navbar-item">
+                            <span>
+                                Blog
+                            </span>
+                        </a>
+                        <a href="#" class="navbar-item">
+                            <span>
+                                Contato
+                            </span>
+                        </a>
+                        <a href="#" class="navbar-item">
+                            <span>
+                                <button class="button is-primary">DOAR</button>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <section class="hero" id="hero-menu">
+            <div class="hero-body content-hero-menu">
+                <h1 class="title has-text-white">
+                    Sua festa pode transformar vidas!
+                </h1>
+                <p class="subtitle has-text-white">
+                    Uma forma simples e criativa de contribuir com nossos projetos sociais é organizando uma "festa do
+                    bem"!
+                </p>
+                <span>
+                    <button class="button is-medium is-primary has-text-white">SAIBA MAIS</button>
+                </span>
+            </div>
+        </section>
+    </header>
+
+    
+    {% block content %}{% endblock %}
+        
+
+    <section class="footer">
+        <div class="container has-text-centered">
+            <div class="columns is-centered">
+                <div class="column is-mobile">
+                    <figure class="image logo-in-footer">
+                        <img src="{% static 'images/logo-julita.png' %}" alt="Logo">
+                    </figure>
+                    <div class="column is-12">
+                        <h1 class="has-text-left title-footer">Acompanhe-nos</h1>
+                        <div class="social-media">
+                            <a href="#" target="_blank" class="button"> <i class="fab fa-facebook"
+                                    aria-hidden="true"></i></a>
+                            <a href="#" target="_blank" class="button"> <i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank" class="button"> <i class="fab fa-youtube"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-mobile">
+                    <div class="column is-12">
+                        <h1 class="has-text-left title-footer">Entre em Contato</h1>
+                        <br>
+                        <div class="address">
+                            <h1 class="has-text-left has-text-white">Rua Nova do Tuparoquera, 249 | <br>
+                                Jardim São Luis São Paulo - SP | <br>
+                                Cep 05820-200
+                            </h1>
+                        </div>
+                        <br>
+                        <span class="contacts"><i class="fas fa-phone-alt"></i> &nbsp; (11) 5853-2050</span>
+                        <span class="contacts"><i class="fas fa-envelope"></i> &nbsp;
+                            comunicacao@fundacaojulita.org.br</span><br>
+    
+                    </div>
+                </div>
+                <div class="column is-mobile">
+                    <h1 class="has-text-left title-footer">Receba nossas Notícias</h1>
+                    <br>
+                    <div class="field">
+                        <p class="control has-icons-left">
+                            <input class="input" type="text" placeholder="Seu nome">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="field">
+                        <p class="control has-icons-left has-icons-right">
+                            <input class="input" type="email" placeholder="Seu melhor E-mail">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                        </p>
+                    </div>
+                    <button class="button is-primary is-fullwidth">Enviar &nbsp;<i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="{% static 'javascript/main.js' %}"></script>
+</body>
+</html>
