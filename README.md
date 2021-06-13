@@ -1,2 +1,2 @@
 # basedOnJulita
-Junior Full-Stack Web Developer Test
+Trainee Full-Stack Web Developer Test
